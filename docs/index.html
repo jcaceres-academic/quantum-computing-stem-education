@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Urban PM2.5 Methodology</title>
+<title>Quantum Computing in Data Science and STEM Education – Urban PM2.5 Methodology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,17 +113,24 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#direct-access" id="toc-direct-access" class="nav-link active" data-scroll-target="#direct-access">🔗 <strong>Direct access</strong></a></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">🧠 Overview</a></li>
-  <li><a href="#research-motivation" id="toc-research-motivation" class="nav-link" data-scroll-target="#research-motivation">🎯 Research motivation</a></li>
+  <li><a href="#research-motivation" id="toc-research-motivation" class="nav-link" data-scroll-target="#research-motivation">🎯 Research motivation</a>
+  <ul class="collapse">
+  <li><a href="#research-objectives-and-scope" id="toc-research-objectives-and-scope" class="nav-link" data-scroll-target="#research-objectives-and-scope">Research Objectives and Scope</a></li>
+  <li><a href="#methodological-framework" id="toc-methodological-framework" class="nav-link" data-scroll-target="#methodological-framework">Methodological Framework</a></li>
+  <li><a href="#bibliometric-and-thematic-results" id="toc-bibliometric-and-thematic-results" class="nav-link" data-scroll-target="#bibliometric-and-thematic-results">Bibliometric and Thematic Results</a></li>
+  <li><a href="#educational-tools-analysis" id="toc-educational-tools-analysis" class="nav-link" data-scroll-target="#educational-tools-analysis">Educational Tools Analysis</a></li>
+  <li><a href="#strategic-implications-for-stem-education" id="toc-strategic-implications-for-stem-education" class="nav-link" data-scroll-target="#strategic-implications-for-stem-education">Strategic Implications for STEM Education</a></li>
   <li><a href="#reproducible-methodological-workflow" id="toc-reproducible-methodological-workflow" class="nav-link" data-scroll-target="#reproducible-methodological-workflow">🧩 Reproducible methodological workflow</a></li>
-  <li><a href="#analytical-philosophy" id="toc-analytical-philosophy" class="nav-link" data-scroll-target="#analytical-philosophy">🧭 Analytical philosophy</a></li>
+  <li><a href="#relation-to-the-doctoral-thesis" id="toc-relation-to-the-doctoral-thesis" class="nav-link" data-scroll-target="#relation-to-the-doctoral-thesis">Relation to the Doctoral Thesis</a></li>
+  <li><a href="#reproducibility-and-access" id="toc-reproducibility-and-access" class="nav-link" data-scroll-target="#reproducibility-and-access">Reproducibility and Access</a></li>
   <li><a href="#repository-structure" id="toc-repository-structure" class="nav-link" data-scroll-target="#repository-structure">🗂️ Repository structure</a></li>
   <li><a href="#technologies-used" id="toc-technologies-used" class="nav-link" data-scroll-target="#technologies-used">⚙️ Technologies Used</a></li>
-  <li><a href="#reproducibility-and-openness" id="toc-reproducibility-and-openness" class="nav-link" data-scroll-target="#reproducibility-and-openness">🔁 Reproducibility and openness</a></li>
-  <li><a href="#relation-to-the-doctoral-thesis" id="toc-relation-to-the-doctoral-thesis" class="nav-link" data-scroll-target="#relation-to-the-doctoral-thesis">🎓 Relation to the doctoral thesis</a></li>
+  <li><a href="#relation-to-the-doctoral-thesis-1" id="toc-relation-to-the-doctoral-thesis-1" class="nav-link" data-scroll-target="#relation-to-the-doctoral-thesis-1">🎓 Relation to the doctoral thesis</a></li>
   <li><a href="#bibliographic-resources" id="toc-bibliographic-resources" class="nav-link" data-scroll-target="#bibliographic-resources">📚 Bibliographic Resources</a></li>
   <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">📚 Citation</a></li>
   <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">⚖️ License</a></li>
   <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">📬 Contact</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -136,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Urban PM2.5 Methodology</h1>
-<p class="subtitle lead">A reproducible and extensible analytical pipeline for applied data science</p>
+<h1 class="title">Quantum Computing in Data Science and STEM Education</h1>
+<p class="subtitle lead">A Bibliometric and Pedagogical Analysis with Strategic Implications</p>
 </div>
 
 
@@ -154,35 +161,100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" class="img-fluid" alt="License: CC BY 4.0"></a> <a href="https://quarto.org/"><img src="https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg" class="img-fluid" alt="Rendered with Quarto"></a> <a href="https://jcaceres-academic.github.io/urban-pm25-methodology/"><img src="https://img.shields.io/badge/Website-online-brightgreen.svg" class="img-fluid" alt="GitHub Pages"></a> <a href="https://github.com/jcaceres-academic/urban-pm25-methodology"><img src="https://img.shields.io/badge/GitHub-Repository-black.svg" class="img-fluid" alt="GitHub Repo"></a></p>
+<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" class="img-fluid" alt="License: CC BY 4.0"></a> <a href="https://quarto.org/"><img src="https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg" class="img-fluid" alt="Rendered with Quarto"></a> <a href="https://jcaceres-academic.github.io/quantum-computing-stem-education/"><img src="https://img.shields.io/badge/Website-online-brightgreen.svg" class="img-fluid" alt="GitHub Pages"></a> <a href="https://github.com/jcaceres-academic/quantum-computing-stem-education"><img src="https://img.shields.io/badge/GitHub-Repository-black.svg" class="img-fluid" alt="GitHub Repo"></a> <a href="https://doi.org/10.3390/computers14060235"><img src="https://img.shields.io/badge/DOI-10.3390%2Fcomputers14060235-blue.svg" class="img-fluid" alt="DOI"></a></p>
 <hr>
 <section id="direct-access" class="level2">
 <h2 class="anchored" data-anchor-id="direct-access">🔗 <strong>Direct access</strong></h2>
 <ul>
-<li>🧪 <a href="scripts.html">Methodological scripts and pipeline implementation</a></li>
+<li>🧪 <a href="scripts.html">Bibliometric and pedagogical analysis scripts</a></li>
 <li>💻 <a href="notebook.html">Reproducible notebook</a></li>
-<li>📄 <a href="">Associated article</a></li>
+<li>📄 <a href="https://doi.org/10.3390/computers14060235">Associated article (Computers, 2025)</a></li>
 </ul>
 </section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">🧠 Overview</h2>
-<p>This repository hosts the open, reproducible materials developed as a <strong>methodological extension of a doctoral thesis in Applied Data Science</strong>, focused on the analysis of urban PM2.5 concentrations.</p>
-<p>Rather than proposing a single optimal predictive model, the project introduces a <strong>coherent analytical pipeline</strong> designed for real-world environmental data, where temporal structure, interpretability, and reproducibility are prioritised over algorithmic benchmarking.</p>
-<p>The project is presented as an example of <strong>research continuity</strong>, illustrating how a doctoral research line can evolve beyond the thesis itself.</p>
-<hr>
+<section id="overview" class="level1">
+<h1>🧠 Overview</h1>
+<p>Quantum computing is increasingly intersecting with data science and STEM education, yet its integration into higher education remains fragmented and uneven. This project presents a dual analytical approach that combines <strong>bibliometric mapping of scientific production</strong> with a <strong>pedagogical analysis of widely used quantum education platforms</strong>, aiming to clarify how quantum technologies are currently shaping educational and curricular practices.</p>
+<p>Based on a curated corpus of peer-reviewed publications indexed in Scopus (2015–2024), the study identifies growth trends, thematic structures, and collaboration patterns at the intersection of quantum computing, data science, and education. In parallel, it evaluates representative quantum platforms using pedagogical criteria such as accessibility, usability, and curricular alignment.</p>
+<p>The resulting evidence supports a set of <strong>strategic insights</strong> for curriculum design and institutional planning. Beyond mapping the field, the project establishes a <strong>conceptual and methodological foundation</strong> for subsequent applied and reproducible studies within a broader doctoral research programme, including extensible analytical pipelines and demonstrative quantum computing applications under NISQ constraints.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GraphicAbstract.png" class="img-fluid figure-img"></p>
+<figcaption>Graphical abstract summarising the scope, methods, and strategic contributions of the study.</figcaption>
+</figure>
+</div>
 </section>
-<section id="research-motivation" class="level2">
-<h2 class="anchored" data-anchor-id="research-motivation">🎯 Research motivation</h2>
-<p>Urban air quality analysis is often approached through fragmented workflows, ad hoc modelling decisions, or performance-driven comparisons that overlook methodological coherence.</p>
-<p>This project responds to several recurrent limitations observed in applied data science practice:</p>
-<ul>
-<li>Insufficient attention to the temporal structure of environmental data.</li>
-<li>Overemphasis on predictive performance at the expense of interpretability.</li>
-<li>Superficial adoption of emerging technologies without methodological grounding.</li>
-<li>Limited reproducibility in applied environmental analytics.</li>
-</ul>
-<p>The proposed pipeline addresses these issues by prioritising <strong>analytical clarity, transparency, and methodological robustness</strong>.</p>
-<hr>
+<section id="research-motivation" class="level1">
+<h1>🎯 Research motivation</h1>
+<section id="research-objectives-and-scope" class="level2">
+<h2 class="anchored" data-anchor-id="research-objectives-and-scope">Research Objectives and Scope</h2>
+<p>This project is guided by three main objectives:</p>
+<ol type="1">
+<li><p><strong>To map the evolution and thematic structure</strong> of scientific production at the intersection of quantum computing, data science, and STEM education, identifying dominant research trends and emerging areas.</p></li>
+<li><p><strong>To analyse pedagogical orientations and practical tools</strong> used in quantum education, assessing their accessibility, usability, and alignment with higher education curricula.</p></li>
+<li><p><strong>To derive strategic insights</strong> that inform curriculum design, institutional planning, and future research directions in quantum-enabled STEM education.</p></li>
+</ol>
+<p>The scope of the study is deliberately focused on <strong>higher education and advanced STEM training</strong>, combining quantitative bibliometric techniques with qualitative, criteria-based evaluation of educational platforms. The project does not aim to assess algorithmic performance or technological superiority, but rather to understand how quantum computing is being translated into educational practice and how this translation can be strengthened in a coherent and scalable manner.</p>
+</section>
+<section id="methodological-framework" class="level2">
+<h2 class="anchored" data-anchor-id="methodological-framework">Methodological Framework</h2>
+<p>The study adopts a <strong>dual methodological approach</strong> that integrates bibliometric analysis with a structured pedagogical review of quantum education platforms. This design enables a coherent examination of both the <strong>scientific knowledge base</strong> and its <strong>translation into educational practice</strong>.</p>
+<section id="bibliometric-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="bibliometric-analysis">Bibliometric analysis</h3>
+<p>A curated dataset of peer-reviewed publications indexed in Scopus (2015–2024) was constructed using a targeted search strategy. Records were filtered through a multi-stage curation process involving deduplication, relevance screening, and conceptual validation. Bibliometric techniques—such as co-occurrence analysis, thematic clustering, and collaboration network mapping—were applied to identify structural patterns and temporal dynamics in the field.</p>
+</section>
+<section id="pedagogical-tool-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="pedagogical-tool-analysis">Pedagogical tool analysis</h3>
+<p>In parallel, a selection of widely used quantum education platforms was analysed using <strong>explicit pedagogical criteria</strong>, including accessibility, usability, availability of educational resources, and curricular alignment. The analysis focuses on documented educational use rather than technical performance benchmarking.</p>
+</section>
+<section id="analytical-principles" class="level3">
+<h3 class="anchored" data-anchor-id="analytical-principles">Analytical principles</h3>
+<p>Across both components, the methodology prioritises: - transparency of analytical decisions, - time-aware interpretation of trends, - reproducibility through script-based workflows, and - coherence between conceptual analysis and educational implications.</p>
+</section>
+</section>
+<section id="bibliometric-and-thematic-results" class="level2">
+<h2 class="anchored" data-anchor-id="bibliometric-and-thematic-results">Bibliometric and Thematic Results</h2>
+<p>The bibliometric analysis reveals a rapidly growing yet structurally fragmented research field at the intersection of quantum computing, data science, and STEM education. The results highlight dominant thematic areas, emerging pedagogical concerns, and the relative position of education-oriented contributions within a largely technology-driven landscape.</p>
+<section id="thematic-structure-and-keyword-networks" class="level3">
+<h3 class="anchored" data-anchor-id="thematic-structure-and-keyword-networks">Thematic structure and keyword networks</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure4.png" class="img-fluid figure-img"></p>
+<figcaption>Keyword co-occurrence network illustrating the main thematic clusters in quantum computing and STEM education research.</figcaption>
+</figure>
+</div>
+<p>The keyword co-occurrence network shows a strong concentration around core technological concepts, with educational and curricular themes appearing as secondary but increasingly connected clusters.</p>
+</section>
+<section id="collaboration-and-geographical-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="collaboration-and-geographical-patterns">Collaboration and geographical patterns</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure8.png" class="img-fluid figure-img"></p>
+<figcaption>International collaboration network based on co-authorship analysis.</figcaption>
+</figure>
+</div>
+<p>The collaboration network indicates a predominance of geographically concentrated research activity, with limited cross-institutional continuity, reinforcing the fragmented nature of the field.</p>
+</section>
+</section>
+<section id="educational-tools-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="educational-tools-analysis">Educational Tools Analysis</h2>
+<p>To complement the bibliometric findings, a comparative analysis of widely adopted quantum education platforms was conducted using pedagogical criteria focused on accessibility, usability, and curricular integration.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure9.png" class="img-fluid figure-img"></p>
+<figcaption>Comparative analysis of quantum education platforms based on pedagogical and technical dimensions.</figcaption>
+</figure>
+</div>
+<p>Rather than benchmarking technical performance, this analysis highlights how platform design choices influence their educational suitability and scalability in higher education contexts.</p>
+</section>
+<section id="strategic-implications-for-stem-education" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-implications-for-stem-education">Strategic Implications for STEM Education</h2>
+<p>The combined evidence from bibliometric trends and tool analysis supports a staged approach to the integration of quantum computing in STEM education.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure11.png" class="img-fluid figure-img"></p>
+<figcaption>Strategic roadmap for the integration of quantum computing into STEM education systems.</figcaption>
+</figure>
+</div>
 </section>
 <section id="reproducible-methodological-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="reproducible-methodological-workflow">🧩 Reproducible methodological workflow</h2>
@@ -198,37 +270,35 @@ Simple baseline and linear models with time-based validation to establish method
 Integration of a quantum kernel-based model under NISQ constraints, without claims of performance superiority.</p></li>
 </ol>
 <p>This workflow reflects a <strong>methodological stance</strong>, not a technology-driven comparison.</p>
-<hr>
 </section>
-<section id="analytical-philosophy" class="level2">
-<h2 class="anchored" data-anchor-id="analytical-philosophy">🧭 Analytical philosophy</h2>
-<p>The pipeline is guided by the following principles:</p>
+<section id="relation-to-the-doctoral-thesis" class="level2">
+<h2 class="anchored" data-anchor-id="relation-to-the-doctoral-thesis">Relation to the Doctoral Thesis</h2>
+<p>This project constitutes the <strong>conceptual and analytical foundation</strong> of a broader doctoral research programme focused on applied data science, STEM education, and emerging computational paradigms. By systematically mapping scientific trends and analysing pedagogical tools, it establishes the theoretical and methodological context in which subsequent applied studies are situated.</p>
+<p>Within the structure of the doctoral thesis, this work precedes and informs <strong>reproducible applied research</strong> that operationalises the identified methodological principles. In particular, the insights derived here directly support the design and validation of extensible analytical pipelines, including demonstrative applications of quantum computing under NISQ constraints in real-world data science contexts.</p>
+<p>Rather than functioning as an isolated literature-based contribution, the project articulates a coherent research trajectory in which conceptual analysis, methodological design, and empirical validation are explicitly linked.</p>
+</section>
+<section id="reproducibility-and-access" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility-and-access">Reproducibility and Access</h2>
+<p>All analyses presented in this project are designed to ensure <strong>transparency, traceability, and reproducibility</strong>. The complete analytical workflow is implemented through documented scripts and rendered using Quarto, allowing results to be regenerated and inspected in a structured manner.</p>
 <ul>
-<li><strong>Sequential structure</strong>: each analytical step builds explicitly on the previous one.</li>
-<li><strong>Time-aware validation</strong>: no random splits are applied to temporal data.</li>
-<li><strong>Model parsimony</strong>: simple and interpretable models are favoured where appropriate.</li>
-<li><strong>Reproducibility by design</strong>: all results are generated programmatically from documented scripts.</li>
-<li><strong>Extensibility</strong>: emerging analytical paradigms can be integrated without structural changes.</li>
+<li>Bibliometric analyses and visualisations are generated programmatically from curated metadata.</li>
+<li>Pedagogical evaluations follow explicitly defined criteria and documented analytical steps.</li>
+<li>No manual data manipulation is performed outside scripted workflows.</li>
 </ul>
-<p>This philosophy underpins both the doctoral thesis and its extension presented here.</p>
-<hr>
+<p>Direct access to the underlying materials is provided through the links below: - 🧪 <strong>Analytical scripts</strong>: implementation of bibliometric and pedagogical analyses. - 💻 <strong>Reproducible notebook</strong>: step-by-step execution and figure generation. - 📄 <strong>Associated article</strong>: peer-reviewed publication in <em>Computers</em> (2025).</p>
+<p>Together, these resources support open, verifiable research practices and enable reuse and extension within related studies in data science, STEM education, and applied quantum computing.</p>
 </section>
 <section id="repository-structure" class="level2">
 <h2 class="anchored" data-anchor-id="repository-structure">🗂️ Repository structure</h2>
-<pre class="text"><code>urban-pm25-methodology/
-├── docs/                      # Rendered Quarto website (GitHub Pages)
-│   ├── index.html
-│   ├── scripts.html
-│   └── notebook.html
-├── data/                      # Clean analysis-ready dataset
-├── figures_tiff/              # High-resolution figures for publication
-├── scripts/                   # R and Python scripts implementing the pipeline
+<pre class="text"><code>quantum-computing-stem-education/
+├── docs/ # Rendered Quarto website (GitHub Pages)
+├── scripts/ # Bibliometric and pedagogical analysis scripts
+├── figures/ # Reproducible figures and visual outputs
 ├── index.qmd
-├── scripts.qmd
 ├── notebook.qmd
 ├── _quarto.yml
-├── LICENSE
-└── README.md</code></pre>
+├── README.md
+└── LICENSE</code></pre>
 </section>
 <section id="technologies-used" class="level2">
 <h2 class="anchored" data-anchor-id="technologies-used">⚙️ Technologies Used</h2>
@@ -236,60 +306,35 @@ Integration of a quantum kernel-based model under NISQ constraints, without clai
 <thead>
 <tr class="header">
 <th>Category</th>
-<th>Tools / Packages</th>
+<th>Tools</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Programming</strong></td>
-<td><a href="https://www.r-project.org/">R</a> 4.4 + · <a href="https://quarto.org/">Quarto</a></td>
+<td>Programming</td>
+<td>R · Quarto</td>
 </tr>
 <tr class="even">
-<td><strong>Data Handling</strong></td>
-<td><code>tidyverse</code> · <code>arrow</code> · <code>lubridate</code> . <code>readr</code></td>
+<td>Data Sources</td>
+<td>Scopus (bibliographic metadata)</td>
 </tr>
 <tr class="odd">
-<td><strong>Visualisation</strong></td>
-<td><code>ggplot2</code> · <code>cowplot</code></td>
+<td>Bibliometric Analysis</td>
+<td>VOSviewer</td>
 </tr>
 <tr class="even">
-<td><strong>Modelling</strong></td>
-<td><code>Linear models</code> · <code>Persistence baselines</code></td>
+<td>Visualisation</td>
+<td>ggplot2</td>
 </tr>
 <tr class="odd">
-<td><strong>Quantum Computing</strong></td>
-<td><code>Qiskit</code> · <code>Qiskit Aer</code> · <code>Qiskit Machine Learning</code></td>
-</tr>
-<tr class="even">
-<td><strong>Reproducibility</strong></td>
-<td><code>Git</code> · <code>GitHub Pages</code> · <code>Conda</code></td>
+<td>Reproducibility</td>
+<td>Git · GitHub Pages</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="reproducibility-and-openness" class="level2">
-<h2 class="anchored" data-anchor-id="reproducibility-and-openness">🔁 Reproducibility and openness</h2>
-<p>All analyses are fully reproducible and rely exclusively on open-source tools.</p>
-<ul>
-<li>Scripts are executed sequentially and independently.</li>
-<li>No manual data manipulation is performed.</li>
-<li>Computational environments are explicitly documented.</li>
-<li>Results are generated programmatically from source code.</li>
-</ul>
-<p>This approach supports transparent, verifiable, and reusable research practices.</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Fig1_Metodological_pipeline.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Fig. 1.</strong> Methodological pipeline for urban PM2.5 analysis, illustrating the sequential integration of data preparation, exploratory analysis, classical modelling, and a demonstrative quantum extension under NISQ constraints.</p>
-</section>
-<section id="relation-to-the-doctoral-thesis" class="level2">
-<h2 class="anchored" data-anchor-id="relation-to-the-doctoral-thesis">🎓 Relation to the doctoral thesis</h2>
+<section id="relation-to-the-doctoral-thesis-1" class="level2">
+<h2 class="anchored" data-anchor-id="relation-to-the-doctoral-thesis-1">🎓 Relation to the doctoral thesis</h2>
 <p>This project constitutes a direct methodological extension of the doctoral thesis and is presented as evidence that the research line remains active, adaptable, and open to emerging analytical methodologies.</p>
 <p>It is not intended as a standalone technological breakthrough, but as a <strong>coherent continuation of a broader research programme</strong> in applied data science and urban environmental analytics.</p>
 </section>
@@ -299,15 +344,17 @@ Integration of a quantum kernel-based model under NISQ constraints, without clai
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">📚 Citation</h2>
-<p>If you reuse or adapt this resource, please cite as:</p>
-<blockquote class="blockquote">
-<p>Cáceres-Tello, J., &amp; Galán-Hernández, J. J. (2025).<br>
-Urban PM2.5 Methodology: A reproducible analytical pipeline for applied data science. Available at: <a href="https://jcaceres-academic.github.io/urban-pm25-methodology">https://jcaceres-academic.github.io/urban-pm25-methodology/</a></p>
-</blockquote>
+<p>If you use or refer to this work, please cite the associated article:</p>
+<p>Cáceres-Tello, J.; López-Meneses, E.; Galán-Hernández, J. J.; López-Catalán, L.<br>
+<strong>Quantum Computing in Data Science and STEM Education: Mapping Academic Trends and Analyzing Practical Tools.</strong> <em>Computers</em> 2025, 14, 235. https://doi.org/10.3390/computers14060235</p>
 </section>
 <section id="license" class="level2">
 <h2 class="anchored" data-anchor-id="license">⚖️ License</h2>
-<p>Code and notebooks: Creative Commons Attribution 4.0 (CC BY 4.0) Data (if reused): CC0 1.0 Public Domain Dedication</p>
+<ul>
+<li>Source code and notebooks: MIT License<br>
+</li>
+<li>Texts, figures, and analytical materials: Creative Commons Attribution 4.0 (CC BY 4.0)</li>
+</ul>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">📬 Contact</h2>
@@ -315,9 +362,10 @@ Urban PM2.5 Methodology: A reproducible analytical pipeline for applied data sci
 <p>📧 <a href="mailto:jcaceres.academic@gmail.com">jcaceres.academic@gmail.com</a><br>
 📧 <a href="mailto:jescacer@ucm.es">jescacer@ucm.es</a></p>
 <p>⬅️ <a href="https://jcaceres-academic.github.io">Back to my main page</a></p>
-<p>This repository supports open, transparent, and reproducible research in environmental data science and STEM education.</p>
+<p>This repository supports open, transparent, and reproducible research in <strong>quantum computing, data science, and STEM education</strong>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

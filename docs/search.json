@@ -23,16 +23,16 @@
   {
     "objectID": "index.html#repository-structure",
     "href": "index.html#repository-structure",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "🗂️ Repository structure",
-    "text": "🗂️ Repository structure\nurban-pm25-methodology/\n├── docs/                      # Rendered Quarto website (GitHub Pages)\n│   ├── index.html\n│   ├── scripts.html\n│   └── notebook.html\n├── data/                      # Clean analysis-ready dataset\n├── figures_tiff/              # High-resolution figures for publication\n├── scripts/                   # R and Python scripts implementing the pipeline\n├── index.qmd\n├── scripts.qmd\n├── notebook.qmd\n├── _quarto.yml\n├── LICENSE\n└── README.md"
+    "text": "🗂️ Repository structure\nquantum-computing-stem-education/\n├── docs/ # Rendered Quarto website (GitHub Pages)\n├── scripts/ # Bibliometric and pedagogical analysis scripts\n├── figures/ # Reproducible figures and visual outputs\n├── index.qmd\n├── notebook.qmd\n├── _quarto.yml\n├── README.md\n└── LICENSE"
   },
   {
     "objectID": "index.html#technologies-used",
     "href": "index.html#technologies-used",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "⚙️ Technologies Used",
-    "text": "⚙️ Technologies Used\n\n\n\nCategory\nTools / Packages\n\n\n\n\nProgramming\nR 4.4 + · Quarto\n\n\nData Handling\ntidyverse · arrow · lubridate . readr\n\n\nVisualisation\nggplot2 · cowplot\n\n\nModelling\nLinear models · Persistence baselines\n\n\nQuantum Computing\nQiskit · Qiskit Aer · Qiskit Machine Learning\n\n\nReproducibility\nGit · GitHub Pages · Conda"
+    "text": "⚙️ Technologies Used\n\n\n\nCategory\nTools\n\n\n\n\nProgramming\nR · Quarto\n\n\nData Sources\nScopus (bibliographic metadata)\n\n\nBibliometric Analysis\nVOSviewer\n\n\nVisualisation\nggplot2\n\n\nReproducibility\nGit · GitHub Pages"
   },
   {
     "objectID": "index.html#educational-use",
@@ -44,23 +44,23 @@
   {
     "objectID": "index.html#citation",
     "href": "index.html#citation",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "📚 Citation",
-    "text": "📚 Citation\nIf you reuse or adapt this resource, please cite as:\n\nCáceres-Tello, J., & Galán-Hernández, J. J. (2025).\nUrban PM2.5 Methodology: A reproducible analytical pipeline for applied data science. Available at: https://jcaceres-academic.github.io/urban-pm25-methodology/"
+    "text": "📚 Citation\nIf you use or refer to this work, please cite the associated article:\nCáceres-Tello, J.; López-Meneses, E.; Galán-Hernández, J. J.; López-Catalán, L.\nQuantum Computing in Data Science and STEM Education: Mapping Academic Trends and Analyzing Practical Tools. Computers 2025, 14, 235. https://doi.org/10.3390/computers14060235"
   },
   {
     "objectID": "index.html#license",
     "href": "index.html#license",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "⚖️ License",
-    "text": "⚖️ License\nCode and notebooks: Creative Commons Attribution 4.0 (CC BY 4.0) Data (if reused): CC0 1.0 Public Domain Dedication"
+    "text": "⚖️ License\n\nSource code and notebooks: MIT License\n\nTexts, figures, and analytical materials: Creative Commons Attribution 4.0 (CC BY 4.0)"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "📬 Contact",
-    "text": "📬 Contact\nJesús Cáceres Tello Department of Computer Systems and Computing Universidad Complutense de Madrid\n📧 jcaceres.academic@gmail.com\n📧 jescacer@ucm.es\n⬅️ Back to my main page\nThis repository supports open, transparent, and reproducible research in environmental data science and STEM education."
+    "text": "📬 Contact\nJesús Cáceres Tello Department of Computer Systems and Computing Universidad Complutense de Madrid\n📧 jcaceres.academic@gmail.com\n📧 jescacer@ucm.es\n⬅️ Back to my main page\nThis repository supports open, transparent, and reproducible research in quantum computing, data science, and STEM education."
   },
   {
     "objectID": "notebook.html",
@@ -184,7 +184,7 @@
   {
     "objectID": "index.html#bibliographic-resources",
     "href": "index.html#bibliographic-resources",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "📚 Bibliographic Resources",
     "text": "📚 Bibliographic Resources\nBibliographic resources associated with the doctoral thesis and related publications will be made available in this repository."
   },
@@ -198,7 +198,7 @@
   {
     "objectID": "index.html#reproducible-methodological-workflow",
     "href": "index.html#reproducible-methodological-workflow",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "🧩 Reproducible methodological workflow",
     "text": "🧩 Reproducible methodological workflow\nThe analytical workflow follows a structured and sequential pipeline:\n\nData preparation and harmonisation\nValidation of raw observations, temporal parsing, and explicit handling of missing values.\nExploratory and structural analysis\nExamination of temporal dynamics, seasonal behaviour, and data gaps to understand the data-generating process.\nClassical modelling and evaluation\nSimple baseline and linear models with time-based validation to establish methodological reference points.\nQuantum methodological extension\nIntegration of a quantum kernel-based model under NISQ constraints, without claims of performance superiority.\n\nThis workflow reflects a methodological stance, not a technology-driven comparison."
   },
@@ -219,9 +219,9 @@
   {
     "objectID": "index.html#relation-to-the-doctoral-thesis",
     "href": "index.html#relation-to-the-doctoral-thesis",
-    "title": "Urban PM2.5 Methodology",
-    "section": "🎓 Relation to the doctoral thesis",
-    "text": "🎓 Relation to the doctoral thesis\nThis project constitutes a direct methodological extension of the doctoral thesis and is presented as evidence that the research line remains active, adaptable, and open to emerging analytical methodologies.\nIt is not intended as a standalone technological breakthrough, but as a coherent continuation of a broader research programme in applied data science and urban environmental analytics."
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Relation to the Doctoral Thesis",
+    "text": "Relation to the Doctoral Thesis\nThis project constitutes the conceptual and analytical foundation of a broader doctoral research programme focused on applied data science, STEM education, and emerging computational paradigms. By systematically mapping scientific trends and analysing pedagogical tools, it establishes the theoretical and methodological context in which subsequent applied studies are situated.\nWithin the structure of the doctoral thesis, this work precedes and informs reproducible applied research that operationalises the identified methodological principles. In particular, the insights derived here directly support the design and validation of extensible analytical pipelines, including demonstrative applications of quantum computing under NISQ constraints in real-world data science contexts.\nRather than functioning as an isolated literature-based contribution, the project articulates a coherent research trajectory in which conceptual analysis, methodological design, and empirical validation are explicitly linked."
   },
   {
     "objectID": "notebook.html#data-preparation-and-harmonisation",
@@ -394,9 +394,9 @@
   {
     "objectID": "index.html#direct-access",
     "href": "index.html#direct-access",
-    "title": "Urban PM2.5 Methodology",
+    "title": "Quantum Computing in Data Science and STEM Education",
     "section": "🔗 Direct access",
-    "text": "🔗 Direct access\n\n🧪 Methodological scripts and pipeline implementation\n💻 Reproducible notebook\n📄 Associated article"
+    "text": "🔗 Direct access\n\n🧪 Bibliometric and pedagogical analysis scripts\n💻 Reproducible notebook\n📄 Associated article (Computers, 2025)"
   },
   {
     "objectID": "LICENSE-CC-BY-4.0.html",
@@ -404,5 +404,54 @@
     "title": "Urban PM2.5 Methodology",
     "section": "",
     "text": "Creative Commons Attribution 4.0 International (CC BY 4.0)\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\nYou are free to: - Share — copy and redistribute the material in any medium or format - Adapt — remix, transform, and build upon the material for any purpose\nUnder the following terms: - Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.\nFull license text: https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "objectID": "index.html#research-objectives-and-scope",
+    "href": "index.html#research-objectives-and-scope",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Research Objectives and Scope",
+    "text": "Research Objectives and Scope\nThis project is guided by three main objectives:\n\nTo map the evolution and thematic structure of scientific production at the intersection of quantum computing, data science, and STEM education, identifying dominant research trends and emerging areas.\nTo analyse pedagogical orientations and practical tools used in quantum education, assessing their accessibility, usability, and alignment with higher education curricula.\nTo derive strategic insights that inform curriculum design, institutional planning, and future research directions in quantum-enabled STEM education.\n\nThe scope of the study is deliberately focused on higher education and advanced STEM training, combining quantitative bibliometric techniques with qualitative, criteria-based evaluation of educational platforms. The project does not aim to assess algorithmic performance or technological superiority, but rather to understand how quantum computing is being translated into educational practice and how this translation can be strengthened in a coherent and scalable manner."
+  },
+  {
+    "objectID": "index.html#methodological-framework",
+    "href": "index.html#methodological-framework",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Methodological Framework",
+    "text": "Methodological Framework\nThe study adopts a dual methodological approach that integrates bibliometric analysis with a structured pedagogical review of quantum education platforms. This design enables a coherent examination of both the scientific knowledge base and its translation into educational practice.\n\nBibliometric analysis\nA curated dataset of peer-reviewed publications indexed in Scopus (2015–2024) was constructed using a targeted search strategy. Records were filtered through a multi-stage curation process involving deduplication, relevance screening, and conceptual validation. Bibliometric techniques—such as co-occurrence analysis, thematic clustering, and collaboration network mapping—were applied to identify structural patterns and temporal dynamics in the field.\n\n\nPedagogical tool analysis\nIn parallel, a selection of widely used quantum education platforms was analysed using explicit pedagogical criteria, including accessibility, usability, availability of educational resources, and curricular alignment. The analysis focuses on documented educational use rather than technical performance benchmarking.\n\n\nAnalytical principles\nAcross both components, the methodology prioritises: - transparency of analytical decisions, - time-aware interpretation of trends, - reproducibility through script-based workflows, and - coherence between conceptual analysis and educational implications."
+  },
+  {
+    "objectID": "index.html#bibliometric-and-thematic-results",
+    "href": "index.html#bibliometric-and-thematic-results",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Bibliometric and Thematic Results",
+    "text": "Bibliometric and Thematic Results\nThe bibliometric analysis reveals a rapidly growing yet structurally fragmented research field at the intersection of quantum computing, data science, and STEM education. The results highlight dominant thematic areas, emerging pedagogical concerns, and the relative position of education-oriented contributions within a largely technology-driven landscape.\n\nThematic structure and keyword networks\n\n\n\nKeyword co-occurrence network illustrating the main thematic clusters in quantum computing and STEM education research.\n\n\nThe keyword co-occurrence network shows a strong concentration around core technological concepts, with educational and curricular themes appearing as secondary but increasingly connected clusters.\n\n\nCollaboration and geographical patterns\n\n\n\nInternational collaboration network based on co-authorship analysis.\n\n\nThe collaboration network indicates a predominance of geographically concentrated research activity, with limited cross-institutional continuity, reinforcing the fragmented nature of the field."
+  },
+  {
+    "objectID": "index.html#educational-tools-analysis",
+    "href": "index.html#educational-tools-analysis",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Educational Tools Analysis",
+    "text": "Educational Tools Analysis\nTo complement the bibliometric findings, a comparative analysis of widely adopted quantum education platforms was conducted using pedagogical criteria focused on accessibility, usability, and curricular integration.\n\n\n\nComparative analysis of quantum education platforms based on pedagogical and technical dimensions.\n\n\nRather than benchmarking technical performance, this analysis highlights how platform design choices influence their educational suitability and scalability in higher education contexts."
+  },
+  {
+    "objectID": "index.html#strategic-implications-for-stem-education",
+    "href": "index.html#strategic-implications-for-stem-education",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Strategic Implications for STEM Education",
+    "text": "Strategic Implications for STEM Education\nThe combined evidence from bibliometric trends and tool analysis supports a staged approach to the integration of quantum computing in STEM education.\n\n\n\nStrategic roadmap for the integration of quantum computing into STEM education systems."
+  },
+  {
+    "objectID": "index.html#reproducibility-and-access",
+    "href": "index.html#reproducibility-and-access",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "Reproducibility and Access",
+    "text": "Reproducibility and Access\nAll analyses presented in this project are designed to ensure transparency, traceability, and reproducibility. The complete analytical workflow is implemented through documented scripts and rendered using Quarto, allowing results to be regenerated and inspected in a structured manner.\n\nBibliometric analyses and visualisations are generated programmatically from curated metadata.\nPedagogical evaluations follow explicitly defined criteria and documented analytical steps.\nNo manual data manipulation is performed outside scripted workflows.\n\nDirect access to the underlying materials is provided through the links below: - 🧪 Analytical scripts: implementation of bibliometric and pedagogical analyses. - 💻 Reproducible notebook: step-by-step execution and figure generation. - 📄 Associated article: peer-reviewed publication in Computers (2025).\nTogether, these resources support open, verifiable research practices and enable reuse and extension within related studies in data science, STEM education, and applied quantum computing."
+  },
+  {
+    "objectID": "index.html#relation-to-the-doctoral-thesis-1",
+    "href": "index.html#relation-to-the-doctoral-thesis-1",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "🎓 Relation to the doctoral thesis",
+    "text": "🎓 Relation to the doctoral thesis\nThis project constitutes a direct methodological extension of the doctoral thesis and is presented as evidence that the research line remains active, adaptable, and open to emerging analytical methodologies.\nIt is not intended as a standalone technological breakthrough, but as a coherent continuation of a broader research programme in applied data science and urban environmental analytics."
   }
 ]
