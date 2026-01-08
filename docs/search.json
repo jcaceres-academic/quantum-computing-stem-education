@@ -67,7 +67,7 @@
     "href": "notebook.html",
     "title": "Urban PM2.5 Methodology",
     "section": "",
-    "text": "Urban air quality datasets are typically affected by issues such as missing observations, irregular temporal coverage, and heterogeneous formats.\nBefore any exploratory or modelling analysis can be considered meaningful, it is therefore essential to ensure that the data are clean, temporally consistent, and analysis-ready.\nThis initial stage establishes the analytical baseline for the entire pipeline.\n\n\n\nThe analysis is based on daily PM2.5 concentration measurements collected at an urban monitoring location over the period 2021–2023.\nThe dataset is treated as an observational time series, with explicit attention to: - temporal ordering, - continuity of measurements, - and potential gaps in data availability.\nNo spatial aggregation or external data sources are introduced at this stage.\n\n\n\nThe data preparation process follows a transparent and reproducible strategy:\n\nRaw data are loaded directly from the data/ directory.\nDate fields are parsed and validated to ensure correct temporal ordering.\nMissing or invalid observations are identified explicitly.\nNo interpolation or synthetic data generation is performed.\nAll transformations are executed programmatically.\n\nThis conservative approach ensures that subsequent analytical results remain traceable to the original observations.\n\n\n\nThe complete data preparation logic is implemented in the following script:\n\n01_data_and_preprocessing.R\n\nThe script produces a clean, analysis-ready dataset that is reused consistently across all subsequent stages.\n\n\n\n\n\n\n\n\nFigure 1"
+    "text": "This notebook documents the analytical groundwork supporting the study of quantum computing in data science and STEM education. Rather than reproducing the full narrative of the associated article, it exposes selected methodological decisions and exploratory steps that underpin the broader analysis.\nThe focus is placed on data preparation, harmonisation, and analytical structuring, which are essential to ensure that subsequent bibliometric and pedagogical analyses are both reproducible and methodologically coherent.\n\n\n\nThe analysis relies on bibliographic metadata extracted from the Scopus database, covering peer-reviewed publications published between 2015 and 2024 at the intersection of quantum computing, data science, and education.\nOnly metadata fields relevant to bibliometric analysis are considered, including: - publication year, - authorship and affiliations, - keywords and abstracts, - document type and subject areas.\nFull-text content is not processed, and no proprietary datasets are redistributed.\n\n\n\nBibliographic data are inherently heterogeneous, reflecting differences in indexing practices, author-provided keywords, and institutional naming conventions. To address these challenges, a conservative harmonisation strategy is adopted:\n\nMetadata are loaded from curated export files.\nDuplicates are identified and removed using explicit matching criteria.\nKeywords are normalised to reduce lexical variation.\nRecords lacking minimal analytical completeness are excluded.\nNo manual editing is performed.\n\nThis approach ensures that analytical structures emerge from the data rather than from ad hoc adjustments.\n # 🔍 Exploratory bibliometric structures\n\n\n\nThis stage provides an exploratory view of the bibliographic landscape underpinning the study. The objective is not to exhaustively report results, but to expose the structural patterns that motivate later analytical and interpretative choices.\nExploration is deliberately selective, focusing on: - thematic organisation of the field, - temporal signals of consolidation or emergence, - and the balance between technological and educational contributions.\n\n\n\nKeyword co-occurrence analysis offers a compact representation of how concepts are articulated across the literature. By examining recurrent keyword associations, it becomes possible to identify dominant thematic cores and peripheral or emerging topics.\nThe resulting structure reveals a strong concentration around core technological concepts, while education-oriented and pedagogical themes appear as connected but secondary clusters. This configuration motivates the subsequent focus on translation into educational practice, rather than purely technical advancement.\n\n\n\nKeyword co-occurrence network highlighting dominant and emerging thematic clusters.\n\n\n\n\n\nAn exploratory inspection of publication years provides additional context for interpreting thematic patterns. Rather than presenting detailed growth curves, the emphasis here is on identifying phases of acceleration and diversification in the literature.\nThe temporal signal supports the interpretation of quantum education as a recently consolidating domain, with increasing interest after 2020 and growing intersections with data science and AI-related topics.\n\n\n\nAll exploratory views presented in this section are intended to inform analytical direction, not to serve as standalone results. Detailed quantitative outputs and complete visualisations are reported in the associated article."
   },
   {
     "objectID": "notebook.html#introduction",
@@ -261,9 +261,9 @@
   {
     "objectID": "notebook.html#data-source-and-scope",
     "href": "notebook.html#data-source-and-scope",
-    "title": "Urban PM2.5 Methodology",
-    "section": "",
-    "text": "The analysis is based on daily PM2.5 concentration measurements collected at an urban monitoring location over the period 2021–2023.\nThe dataset is treated as an observational time series, with explicit attention to: - temporal ordering, - continuity of measurements, - and potential gaps in data availability.\nNo spatial aggregation or external data sources are introduced at this stage."
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.2 Data source and scope",
+    "text": "1.2 Data source and scope\nThe analysis relies on bibliographic metadata extracted from the Scopus database, covering peer-reviewed publications published between 2015 and 2024 at the intersection of quantum computing, data science, and education.\nOnly metadata fields relevant to bibliometric analysis are considered, including: - publication year, - authorship and affiliations, - keywords and abstracts, - document type and subject areas.\nFull-text content is not processed, and no proprietary datasets are redistributed."
   },
   {
     "objectID": "notebook.html#preparation-strategy",
@@ -453,5 +453,82 @@
     "title": "Quantum Computing in Data Science and STEM Education",
     "section": "🎓 Relation to the doctoral thesis",
     "text": "🎓 Relation to the doctoral thesis\nThis project constitutes a direct methodological extension of the doctoral thesis and is presented as evidence that the research line remains active, adaptable, and open to emerging analytical methodologies.\nIt is not intended as a standalone technological breakthrough, but as a coherent continuation of a broader research programme in applied data science and urban environmental analytics."
+  },
+  {
+    "objectID": "notebook.html#analytical-scope",
+    "href": "notebook.html#analytical-scope",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.1 Analytical scope",
+    "text": "1.1 Analytical scope\nThis notebook documents the analytical groundwork supporting the study of quantum computing in data science and STEM education. Rather than reproducing the full narrative of the associated article, it exposes selected methodological decisions and exploratory steps that underpin the broader analysis.\nThe focus is placed on data preparation, harmonisation, and analytical structuring, which are essential to ensure that subsequent bibliometric and pedagogical analyses are both reproducible and methodologically coherent."
+  },
+  {
+    "objectID": "notebook.html#harmonisation-strategy",
+    "href": "notebook.html#harmonisation-strategy",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.3 Harmonisation strategy",
+    "text": "1.3 Harmonisation strategy\nBibliographic data are inherently heterogeneous, reflecting differences in indexing practices, author-provided keywords, and institutional naming conventions. To address these challenges, a conservative harmonisation strategy is adopted:\n\nMetadata are loaded from curated export files.\nDuplicates are identified and removed using explicit matching criteria.\nKeywords are normalised to reduce lexical variation.\nRecords lacking minimal analytical completeness are excluded.\nNo manual editing is performed.\n\nThis approach ensures that analytical structures emerge from the data rather than from ad hoc adjustments.\n # 🔍 Exploratory bibliometric structures"
+  },
+  {
+    "objectID": "notebook.html#analytical-intent",
+    "href": "notebook.html#analytical-intent",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.4 Analytical intent",
+    "text": "1.4 Analytical intent\nThis stage provides an exploratory view of the bibliographic landscape underpinning the study. The objective is not to exhaustively report results, but to expose the structural patterns that motivate later analytical and interpretative choices.\nExploration is deliberately selective, focusing on: - thematic organisation of the field, - temporal signals of consolidation or emergence, - and the balance between technological and educational contributions."
+  },
+  {
+    "objectID": "notebook.html#keyword-co-occurrence-structure",
+    "href": "notebook.html#keyword-co-occurrence-structure",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.5 Keyword co-occurrence structure",
+    "text": "1.5 Keyword co-occurrence structure\nKeyword co-occurrence analysis offers a compact representation of how concepts are articulated across the literature. By examining recurrent keyword associations, it becomes possible to identify dominant thematic cores and peripheral or emerging topics.\nThe resulting structure reveals a strong concentration around core technological concepts, while education-oriented and pedagogical themes appear as connected but secondary clusters. This configuration motivates the subsequent focus on translation into educational practice, rather than purely technical advancement.\n\n\n\nKeyword co-occurrence network highlighting dominant and emerging thematic clusters."
+  },
+  {
+    "objectID": "notebook.html#temporal-orientation-of-the-field",
+    "href": "notebook.html#temporal-orientation-of-the-field",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.6 Temporal orientation of the field",
+    "text": "1.6 Temporal orientation of the field\nAn exploratory inspection of publication years provides additional context for interpreting thematic patterns. Rather than presenting detailed growth curves, the emphasis here is on identifying phases of acceleration and diversification in the literature.\nThe temporal signal supports the interpretation of quantum education as a recently consolidating domain, with increasing interest after 2020 and growing intersections with data science and AI-related topics."
+  },
+  {
+    "objectID": "notebook.html#methodological-note",
+    "href": "notebook.html#methodological-note",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "1.7 Methodological note",
+    "text": "1.7 Methodological note\nAll exploratory views presented in this section are intended to inform analytical direction, not to serve as standalone results. Detailed quantitative outputs and complete visualisations are reported in the associated article."
+  },
+  {
+    "objectID": "notebook.html#analytical-intent-1",
+    "href": "notebook.html#analytical-intent-1",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "2.1 Analytical intent",
+    "text": "2.1 Analytical intent\nThis section outlines the analytical logic and criteria used to examine selected quantum computing platforms from a pedagogical perspective. The aim is not to rank tools or to provide exhaustive technical comparisons, but to clarify how educational suitability is assessed within the study.\nBy making these criteria explicit, the notebook documents the reasoning that underpins the comparative analysis presented in the associated article."
+  },
+  {
+    "objectID": "notebook.html#selection-logic",
+    "href": "notebook.html#selection-logic",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "2.2 Selection logic",
+    "text": "2.2 Selection logic\nPlatforms were selected based on their documented presence in higher education contexts and their relevance to introductory or intermediate quantum education. Both institutional and academic initiatives were considered in order to capture diverse implementation models.\nThe analysis focuses on representative examples, rather than attempting to provide a comprehensive catalogue of available tools."
+  },
+  {
+    "objectID": "notebook.html#pedagogical-evaluation-criteria",
+    "href": "notebook.html#pedagogical-evaluation-criteria",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "2.3 Pedagogical evaluation criteria",
+    "text": "2.3 Pedagogical evaluation criteria\nThe evaluation framework is structured around four main dimensions:\n\nAccessibility\nAvailability of open or educational access, ease of onboarding, and infrastructure requirements.\nUsability\nClarity of interfaces, quality of documentation, and alignment with common teaching environments.\nEducational resources\nPresence of tutorials, guided examples, and curriculum-oriented materials.\nCurricular alignment\nSuitability for integration into existing STEM programmes and data science curricula.\n\nThese dimensions reflect pedagogical considerations rather than technical performance metrics."
+  },
+  {
+    "objectID": "notebook.html#interpretative-stance",
+    "href": "notebook.html#interpretative-stance",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "2.4 Interpretative stance",
+    "text": "2.4 Interpretative stance\nThe resulting assessments are interpreted qualitatively and contextually. No claims of pedagogical superiority are made, and no attempt is made to prescribe specific platforms.\nInstead, the analysis highlights patterns of alignment and mismatch between platform design and educational needs, supporting informed decision-making at institutional and curricular levels."
+  },
+  {
+    "objectID": "notebook.html#methodological-note-1",
+    "href": "notebook.html#methodological-note-1",
+    "title": "Quantum Computing in Data Science and STEM Education",
+    "section": "2.5 Methodological note",
+    "text": "2.5 Methodological note\nDetailed comparative results and visual summaries are reported in the associated article. The purpose of this notebook section is to document the analytical framework, not to replicate published findings."
   }
 ]

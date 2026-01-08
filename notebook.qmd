@@ -1,6 +1,6 @@
 ---
-title: "Urban PM2.5 Methodology"
-subtitle: "A reproducible and extensible analytical pipeline for applied data science"
+title: "Quantum Computing in Data Science and STEM Education"
+subtitle: "A Bibliometric and Pedagogical Analysis with Strategic Implications"
 author:
   - name: "Eloy López-Meneses"
     affiliation: "Pablo de Olavide University"
@@ -22,6 +22,14 @@ format:
     number-sections: true
     code-fold: true
     theme: cosmo
+---
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Rendered with Quarto](https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg)](https://quarto.org/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/jcaceres-academic/quantum-computing-stem-education)
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fcomputers14060235-blue.svg)](https://doi.org/10.3390/computers14060235)
+[![Zotero](https://img.shields.io/badge/Zotero-Computers--2025-red.svg)](https://www.zotero.org/groups/6375391/computers-2025)
+
 ---
 
 # 📂 Data preparation and harmonisation

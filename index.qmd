@@ -10,7 +10,6 @@ format:
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Rendered with Quarto](https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg)](https://quarto.org/)
-[![GitHub Pages](https://img.shields.io/badge/Website-online-brightgreen.svg)](https://jcaceres-academic.github.io/quantum-computing-stem-education/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/jcaceres-academic/quantum-computing-stem-education)
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fcomputers14060235-blue.svg)](https://doi.org/10.3390/computers14060235)
 [![Zotero](https://img.shields.io/badge/Zotero-Computers--2025-red.svg)](https://www.zotero.org/groups/6375391/computers-2025)
