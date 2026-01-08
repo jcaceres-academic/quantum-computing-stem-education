@@ -2,12 +2,16 @@
 title: "Urban PM2.5 Methodology"
 subtitle: "A reproducible and extensible analytical pipeline for applied data science"
 author:
-  - name: "Jesús Cáceres Tello"
-    affiliation: "Computense University of Madrid"
+  - name: "Eloy López-Meneses"
+    affiliation: "Pablo de Olavide University"
+  - name: "Jesús Cáceres-Tello"
+    affiliation: "Complutense University of Madrid"
     email: "jcaceres.academic@gmail.com"
-  - name: "José Javier Galán Hernández"
-    affiliation: "University of Alcalá de Henares"
-    email: "jose.galan@uah.es"
+  - name: "José Javier Galán-Hernández"
+    affiliation: "Complutense University of Madrid"
+    email: "josejgal@ucm.es"
+  - name: "Luis López-Catalán"
+    affiliation: "Pablo de Olavide University"
 date: "2025"
 lang: en
 link-citations: true
@@ -22,240 +26,139 @@ format:
 
 # 📂 Data preparation and harmonisation
 
-## Analytical context
+## Analytical scope
 
-Urban air quality datasets are typically affected by issues such as missing observations, irregular temporal coverage, and heterogeneous formats.
+This notebook documents the **analytical groundwork** supporting the study of quantum computing in data science and STEM education. Rather than reproducing the full narrative of the associated article, it exposes selected methodological decisions and exploratory steps that underpin the broader analysis.
 
-Before any exploratory or modelling analysis can be considered meaningful, it is therefore essential to ensure that the data are **clean, temporally consistent, and analysis-ready**.
-
-This initial stage establishes the **analytical baseline** for the entire pipeline.
+The focus is placed on **data preparation, harmonisation, and analytical structuring**, which are essential to ensure that subsequent bibliometric and pedagogical analyses are both reproducible and methodologically coherent.
 
 ## Data source and scope
 
-The analysis is based on **daily PM2.5 concentration measurements** collected at an urban monitoring location over the period 2021–2023.
+The analysis relies on **bibliographic metadata extracted from the Scopus database**, covering peer-reviewed publications published between 2015 and 2024 at the intersection of quantum computing, data science, and education.
 
-The dataset is treated as an observational time series, with explicit attention to:
-- temporal ordering,
-- continuity of measurements,
-- and potential gaps in data availability.
+Only metadata fields relevant to bibliometric analysis are considered, including:
+- publication year,
+- authorship and affiliations,
+- keywords and abstracts,
+- document type and subject areas.
 
-No spatial aggregation or external data sources are introduced at this stage.
+Full-text content is not processed, and no proprietary datasets are redistributed.
 
-## Preparation strategy
+## Harmonisation strategy
 
-The data preparation process follows a transparent and reproducible strategy:
+Bibliographic data are inherently heterogeneous, reflecting differences in indexing practices, author-provided keywords, and institutional naming conventions. To address these challenges, a conservative harmonisation strategy is adopted:
 
-- Raw data are loaded directly from the `data/` directory.
-- Date fields are parsed and validated to ensure correct temporal ordering.
-- Missing or invalid observations are identified explicitly.
-- No interpolation or synthetic data generation is performed.
-- All transformations are executed programmatically.
+- Metadata are loaded from curated export files.
+- Duplicates are identified and removed using explicit matching criteria.
+- Keywords are normalised to reduce lexical variation.
+- Records lacking minimal analytical completeness are excluded.
+- No manual editing is performed.
 
-This conservative approach ensures that **subsequent analytical results remain traceable to the original observations**.
+This approach ensures that **analytical structures emerge from the data rather than from ad hoc adjustments**.
 
-## Script executed
+![Conceptual overview of the analytical workflow supporting the study.](images/GraphicAbstract.png)
+# 🔍 Exploratory bibliometric structures
 
-The complete data preparation logic is implemented in the following script:
+## Analytical intent
 
-- `01_data_and_preprocessing.R`
+This stage provides an **exploratory view of the bibliographic landscape** underpinning the study. The objective is not to exhaustively report results, but to expose the **structural patterns** that motivate later analytical and interpretative choices.
 
-The script produces a clean, analysis-ready dataset that is reused consistently across all subsequent stages.
+Exploration is deliberately selective, focusing on:
+- thematic organisation of the field,
+- temporal signals of consolidation or emergence,
+- and the balance between technological and educational contributions.
 
-```{r fig-pm25-daily, echo=FALSE, fig.align="center", out.width="90%"}
-knitr::include_graphics("images/Fig2_PM25_daily_time_series.png")
-```
+## Keyword co-occurrence structure
 
-# 🔍 Exploratory and structural analysis
+Keyword co-occurrence analysis offers a compact representation of how concepts are articulated across the literature. By examining recurrent keyword associations, it becomes possible to identify **dominant thematic cores** and **peripheral or emerging topics**.
 
-## Analytical context
+The resulting structure reveals a strong concentration around core technological concepts, while education-oriented and pedagogical themes appear as connected but secondary clusters. This configuration motivates the subsequent focus on **translation into educational practice**, rather than purely technical advancement.
 
-Before applying any modelling strategy, it is essential to understand the **temporal and structural properties** of the PM2.5 time series.
+![Keyword co-occurrence network highlighting dominant and emerging thematic clusters.](images/Figure4.png)
 
-This exploratory stage is not intended to maximise insight discovery, but to:
-- characterise variability,
-- identify seasonal behaviour,
-- and detect structural constraints that inform later methodological choices.
+## Temporal orientation of the field
 
-## Daily PM2.5 time series
+An exploratory inspection of publication years provides additional context for interpreting thematic patterns. Rather than presenting detailed growth curves, the emphasis here is on identifying **phases of acceleration and diversification** in the literature.
 
-The daily time series provides a first global view of the data, revealing both short-term variability and longer-term patterns.
+The temporal signal supports the interpretation of quantum education as a **recently consolidating domain**, with increasing interest after 2020 and growing intersections with data science and AI-related topics.
 
-Key observations include:
-- pronounced day-to-day fluctuations,
-- clear medium-term structure,
-- and visible temporal gaps in specific periods.
+## Methodological note
 
-These features confirm the **time-dependent nature** of the data and justify the use of time-aware validation strategies.
+All exploratory views presented in this section are intended to **inform analytical direction**, not to serve as standalone results. Detailed quantitative outputs and complete visualisations are reported in the associated article.
 
-```{r fig-pm25-boxplot, echo=FALSE, fig.align="center", out.width="90%"}
-knitr::include_graphics("images/Fig3_PM25_monthly_boxplot.png")
-```
+# 🎓 Pedagogical tools: analytical criteria
 
-## Monthly distribution of PM2.5 concentrations
+## Analytical intent
 
-Monthly boxplots summarise the distributional properties of PM2.5 concentrations across the calendar year.
+This section outlines the **analytical logic and criteria** used to examine selected quantum computing platforms from a pedagogical perspective. The aim is not to rank tools or to provide exhaustive technical comparisons, but to clarify **how educational suitability is assessed** within the study.
 
-This representation highlights:
-- differences in central tendency between months,
-- varying dispersion levels,
-- and the presence of extreme values beyond the interquartile range.
+By making these criteria explicit, the notebook documents the reasoning that underpins the comparative analysis presented in the associated article.
 
-Such variability suggests that simple aggregate indicators are insufficient to characterise urban air quality dynamics.
+## Selection logic
 
-```{r fig-pm25-climatology, echo=FALSE, fig.align="center", out.width="90%"}
-knitr::include_graphics("images/Fig4_PM25_monthly_climatology.png")
-```
+Platforms were selected based on their documented presence in higher education contexts and their relevance to introductory or intermediate quantum education. Both institutional and academic initiatives were considered in order to capture diverse implementation models.
 
-## Average annual cycle
+The analysis focuses on **representative examples**, rather than attempting to provide a comprehensive catalogue of available tools.
 
-The average annual cycle aggregates daily observations by month, providing a compact representation of seasonal behaviour.
+## Pedagogical evaluation criteria
 
-This view reveals:
-- systematic seasonal patterns,
-- periods of elevated concentrations,
-- and months with comparatively stable behaviour.
+The evaluation framework is structured around four main dimensions:
 
-The presence of a clear annual cycle supports the inclusion of temporal structure in subsequent modelling stages.
+- **Accessibility**  
+  Availability of open or educational access, ease of onboarding, and infrastructure requirements.
 
-# 📐 Classical modelling and evaluation
+- **Usability**  
+  Clarity of interfaces, quality of documentation, and alignment with common teaching environments.
 
-## Analytical context
+- **Educational resources**  
+  Presence of tutorials, guided examples, and curriculum-oriented materials.
 
-The purpose of this modelling stage is not to optimise predictive performance, but to establish **methodological reference points** that are consistent with the temporal nature of the data.
+- **Curricular alignment**  
+  Suitability for integration into existing STEM programmes and data science curricula.
 
-Rather than comparing multiple complex algorithms, the analysis focuses on **simple and interpretable models** that allow clear evaluation of forecasting behaviour under realistic constraints.
+These dimensions reflect pedagogical considerations rather than technical performance metrics.
 
-## Modelling strategy
+## Interpretative stance
 
-Two baseline modelling approaches are considered:
+The resulting assessments are interpreted **qualitatively and contextually**. No claims of pedagogical superiority are made, and no attempt is made to prescribe specific platforms.
 
-- **Persistence baseline**: assumes that the PM2.5 concentration at time *t* is equal to the observed value at time *t − 1*.
-- **Linear regression model**: uses lagged PM2.5 values as predictors to capture short-term temporal dependence.
+Instead, the analysis highlights **patterns of alignment and mismatch** between platform design and educational needs, supporting informed decision-making at institutional and curricular levels.
 
-Both models are deliberately simple and serve as **methodological anchors**, not as candidates for optimal forecasting.
+## Methodological note
 
-## Temporal validation design
+Detailed comparative results and visual summaries are reported in the associated article. The purpose of this notebook section is to document the **analytical framework**, not to replicate published findings.
 
-To preserve the integrity of the time series, a **time-based split** is applied:
+# 🧭 Methodological reflections and limitations
 
-- The training period includes the earliest observations.
-- The test period consists of the most recent segment of the series.
+This notebook adopts a deliberately **selective and methodological perspective**. Its purpose is not to reproduce the full set of empirical results reported in the associated article, but to expose key analytical decisions and boundary conditions that shape the study.
 
-No random shuffling or cross-validation is used, as such approaches would violate temporal causality.
+Several limitations are therefore explicit:
 
-This validation strategy ensures that model evaluation reflects realistic forecasting conditions.
+- The analysis relies exclusively on **bibliographic metadata**, not on full-text content.
+- Bibliometric structures are sensitive to indexing practices and keyword choices.
+- Pedagogical evaluations are based on documented use and design characteristics, not on controlled educational experiments.
+- The selection of tools prioritises representativeness over exhaustiveness.
 
-## Model execution
+These limitations are not treated as shortcomings, but as **methodological constraints** that preserve analytical clarity and reproducibility. They also delineate clear avenues for future work, including deeper qualitative studies and applied educational evaluations.
 
-he classical modelling and evaluation procedures are implemented in the following script:
+By making these constraints explicit, the notebook supports a **transparent and reflexive research stance**, aligned with the broader objectives of the doctoral research programme.
 
-- [`03_modelling_and_evaluation.R`](https://github.com/jcaceres-academic/urban-pm25-methodology/blob/main/scripts/03_modelling_and_evaluation.R)
+# 🌐 Repository and citation
 
-The script is executed offline as part of the analytical pipeline and generates the evaluation outputs presented below.
+All materials associated with this notebook—including figures, rendered outputs, and configuration files—are available in the public repository:
 
+<https://github.com/jcaceres-academic/quantum-computing-stem-education>
 
-## Observed versus predicted concentrations
+For the complete scientific context, results, and discussion, readers are referred to the associated peer-reviewed article:
 
-A visual comparison between observed and predicted PM2.5 concentrations is used to assess model behaviour over the test period.
+>Cáceres-Tello, J.; López-Meneses, E.; Galán-Hernández, J. J.; López-Catalán, L. (2025). **Quantum Computing in Data Science and STEM Education: Mapping Academic Trends and Analyzing Practical Tools.** *Computers*, 14, 235. https://doi.org/10.3390/computers14060235
 
-This representation allows qualitative evaluation of the following aspects.
+This notebook is provided as a **methodological companion** to the article, supporting transparency, reproducibility, and reuse within related research contexts.
 
-- trend tracking
-- responsiveness to variability
-- systematic bias
-
-```{r fig-pm25-observed-predicted, echo=FALSE, fig.align="center", out.width="90%"}
-knitr::include_graphics("images/Fig5_PM25_observed_vs_predicted_2023.png")
-```
-
-## Quantitative evaluation
-
-Model performance is summarised using standard error metrics:
-   - Mean Absolute Error (MAE)
-   - Root Mean Squared Error (RMSE)
-
-These metrics are reported to characterise forecasting reliability, not to declare model superiority.
-
-The results confirm that simple linear structures provide modest improvements over naive persistence while remaining fully interpretable.
-
-## Methodological implications
-
-This modelling stage leads to three key methodological conclusions:
-
-   1. Simple baselines are essential for contextualising model performance.
-
-   2. Time-aware validation is critical in environmental forecasting.
-
-   3. Increased model complexity is not justified without clear methodological benefit.
-
-These conclusions establish a stable reference framework for any subsequent methodological extensions, including emerging computational paradigms.
-
-
-# ⚛️ Quantum methodological extension (demonstrative)
-
-## Analytical context
-
-This stage explores the **extensibility of the methodological pipeline** to emerging computational paradigms, specifically quantum machine learning under current **Noisy Intermediate-Scale Quantum (NISQ)** constraints.
-
-The objective is **not** to achieve superior predictive performance, nor to compare quantum and classical models, but to demonstrate that the pipeline can **accommodate novel architectures without structural modification**.
-
-## Conceptual motivation
-
-Quantum computing is increasingly discussed in the context of data science and machine learning. However, many applications remain speculative or disconnected from realistic data constraints.
-
-In this notebook, the quantum component is introduced with a **conservative and methodological focus**, respecting the following principles:
-
-- Explicit acknowledgment of current hardware and algorithmic limitations.
-- Reduced training size to ensure computational feasibility.
-- Absence of performance claims or scalability assertions.
-- Clear separation between methodological demonstration and empirical optimisation.
-
-## Quantum modelling strategy
-
-A **quantum kernel-based regression approach** is employed as a proof of concept.
-
-Key characteristics of the implementation include:
-
-- Feature mapping using a parameterised quantum circuit.
-- Kernel evaluation executed on a quantum simulator.
-- Integration with classical regression through hybrid quantum–classical workflows.
-- Deliberate restriction of the training subset size.
-
-This strategy allows the quantum block to be executed within the same analytical pipeline used for classical models.
-
-## Execution environment
-
-The quantum methodological extension is executed in a dedicated Python environment configured with Conda and Qiskit.
-
-Due to the specialised nature of the environment and current NISQ constraints, the execution is **documented rather than reproduced directly within this notebook**.
-
-```{r fig-quantum-conda, echo=FALSE, fig.align="center", out.width="90%"}
-knitr::include_graphics("images/Fig6_Quantum_Console_Output.png")
-```
-
-## Interpretation of results
-
-The reported outputs confirm that the quantum-based analytical component can be executed coherently within the proposed pipeline under realistic computational constraints.
-
-No claims of predictive superiority or scalability are made. The results serve exclusively as a functional validation of methodological extensibility.
-
-# 🌐 Repository and Citation
-
-All code, figures, and harmonised datasets are openly available at:\
-<https://github.com/jcaceres-academic/urban-pm25-methdology>
-
-When citing this educational resource, please use:
-
-> Cáceres-Tello, J., & Galán-Hernández, J. J. (2025).  
-Urban PM2.5 Methodology: A reproducible analytical pipeline for applied data science.
-Available at: [https://jcaceres-academic.github.io/urban-pm25-methodology/](https://jcaceres-academic.github.io/urban-pm25-methodology) 
-> DOI: \[placeholder\]
-
-This ensures traceability and recognition for open-source academic contributions.
 
 # 📚 References
 
-All cited works are managed through the shared bibliographic file 
+All cited works are managed through the shared bibliographic file
 
 A public mirror of this bibliography is archived in the author’s Zotero collection:\
-➡️ <https://www.zotero.org/jcaceres_academic/collections/X6RW9UGU>
+➡️ <https://www.zotero.org/groups/6375391/computers-2025>

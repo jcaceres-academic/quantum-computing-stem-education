@@ -37,7 +37,3 @@ The repository provides the **conceptual and methodological foundation** of a br
 ➡️ For the full theoretical framework, methodological description, figures, and discussion,  
 see the **project website** linked above.
 
-=======
-# quantum-computing-stem-education
-Reproducible bibliometric and pedagogical analysis of quantum computing in data science and STEM education. Conceptual and methodological foundation for applied quantum extensions within a doctoral research programme.
-
