@@ -145,7 +145,7 @@ If you reuse or adapt this resource, please cite as:
 Urban PM2.5 Methodology: A reproducible analytical pipeline for applied data science.
 Available at: [https://jcaceres-academic.github.io/urban-pm25-methodology/](https://jcaceres-academic.github.io/urban-pm25-methodology) 
 
-## ⚖️ License
+## ⚖️ License 
 
 Code and notebooks: Creative Commons Attribution 4.0 (CC BY 4.0)
 Data (if reused): CC0 1.0 Public Domain Dedication
